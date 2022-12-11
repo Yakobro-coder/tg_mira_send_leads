@@ -68,3 +68,7 @@ def send_leads():
                 logging.info(f"[{datetime.utcnow()}] SAVE_USER:\"{user.__json__()}\"")
 
     return {'CODE': 200, 'STATUS': 'OK'}
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, processes=1)
